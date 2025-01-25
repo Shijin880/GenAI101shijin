@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Fact about Corbett National Park</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .fun-fact {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="fun-fact">
+        <h1>Fun Fact about Corbett National Park</h1>
+        <p>Did you know that someone who loves hiking and has traveled to Corbett National Park in India might have trekked through the same trails where the legendary hunter-turned-conservationist Jim Corbett once roamed? Corbett National Park, established in 1936 as Hailey National Park, is not only India's oldest national park but also a haven for wildlife enthusiasts. It's famous for its Bengal tigers, and hiking through its lush landscapes offers a unique opportunity to experience the diverse flora and fauna that inspired Corbett's conservation efforts.</p>
+    </div>
+</body>
+</html>
