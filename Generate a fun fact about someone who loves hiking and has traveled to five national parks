@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Fun Fact Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .fact-display {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .fact-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .fact-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hiking Fun Facts</h1>
+        <div id="fact-display" class="fact-display">
+            Click the button to see a random fun fact about hiking and national parks!
+        </div>
+        <button id="fact-button" class="fact-button">Generate Fun Fact</button>
+    </div>
+    <script>
+        const hikingFacts = [
+            {
+                fact: "Climbing Mountains",
+                detail: "Someone who hikes regularly and visits five national parks could have climbed several mountain peaks, each higher than the Empire State Building!"
+            },
+            {
+                fact: "Hiking Miles",
+                detail: "By hiking through five national parks, an adventurer could easily rack up over 100 miles of trails, equivalent to the distance between two major cities!"
+            },
+            {
+                fact: "National Park Diversity",
+                detail: "With five national parks under their belt, this hiker has experienced a diverse range of landscapes, from deserts to forests to alpine environments."
+            },
+            {
+                fact: "Hiker’s Feet",
+                detail: "Hikers who visit five national parks likely have well over 500,000 steps on their feet during all their adventures!"
+            },
+            {
+                fact: "Wildlife Encounters",
+                detail: "Visiting five national parks means encountering a wide variety of wildlife, from bears to bison to bald eagles!"
+            },
+            {
+                fact: "Trail Master",
+                detail: "After visiting five national parks, a hiker could become a trail master, with knowledge of terrain, weather conditions, and navigation skills that rival the pros."
+            },
+            {
+                fact: "National Park Pass",
+                detail: "This hiker might even have a National Park Annual Pass, unlocking access to hundreds of parks across the country for endless adventures!"
+            },
+            {
+                fact: "Elevation Gain",
+                detail: "Hiking five national parks could easily result in tens of thousands of feet of elevation gain, equivalent to climbing several of the world’s tallest mountains combined."
+            },
+            {
+                fact: "Stunning Views",
+                detail: "From sweeping vistas to majestic peaks, this hiker has seen some of the most stunning views nature has to offer across five different national parks."
+            },
+            {
+                fact: "Health Benefits",
+                detail: "All that hiking across five parks contributes to physical and mental health, improving endurance, strength, and mood with every step taken!"
+            }
+        ];
+
+        document.getElementById('fact-button').addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * hikingFacts.length);
+            const randomFact = hikingFacts[randomIndex];
+            document.getElementById('fact-display').innerHTML = `<strong>${randomFact.fact}:</strong> ${randomFact.detail}`;
+        });
+    </script>
+</body>
+</html>
